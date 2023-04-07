@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="/assets/images/iconito.png">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar_botones_pinterest_container">
+            <div class="navbar_pinterest_botones">
+                <button>
+                    <img src="/assets/images/icon_pinterest.png"
+                    alt="Icono pinterest"
+                    height="25"
+                    >
+                </button>
+                <button> <b>Inicio</b> </button>
+                <button> <b>Hoy</b> </button>
+            <div class="navbar_crear">
+                <button> <b>Crear</b> </button>
+                <button>
+                    <img src="/assets/images/flecha.png"
+                    alt="flecha"
+                    height="20"
+                    >
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <div class="navbar_search_container">
+            <div class="navbar_input_search">
+                <img 
+                src="/assets/images/lupa.png"
+                alt="Icono Buscar"
+                height="50"
+                >
+                <input
+                type="text"
+                placeholder="Search"
+                >
+            </div>
+        </div>
+
+        <div class="navbar_botones_usuario_container">
+            <div class="navbar_botones_usuario">
+                <button>
+                    <img src="/assets/images/icon_noti.png"
+                    alt="Icono Notificacion"
+                    height="27">
+                </button>
+                <button>
+                    <img src="/assets/images/icon_mensaje.png"
+                    alt="Icono Mensajes"
+                    height="27">
+                </button>
+                <button>
+                    <img src="/assets/images/icon_perfil.png"
+                    alt="Icono perfil"
+                    height="27">
+                </button>
+                <button>
+                    <img src="/assets/images/icon_flechagris.png"
+                    alt="Icono Flecha"
+                    width="15">
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <!-- Contenedor de pines -->
+        <div class="pin_container">
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card1.jpg"
+                    alt="Imagen"
+                    height="235">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card3.jpg"
+                    alt="Imagen"
+                    height="305">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card4.jpg"
+                    alt="Imagen"
+                    height="425"
+                    >
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card2.jpg"
+                    alt="Imagen"
+                    height="235">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card7.jpg"
+                    alt="Imagen"
+                    height="310">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card8.jpg"
+                    alt="Imagen"
+                    height="435">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card5.jpg"
+                    alt="Imagen"
+                    height="305">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card9.jpg"
+                    alt="Imagen"
+                    height="435">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card6.jpg"
+                    alt="Imagen"
+                    height="427">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card10.jpg"
+                    alt="Imagen"
+                    height="250">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card11.jpg"
+                    alt="Imagen"
+                    height="320">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card12.jpg"
+                    alt="Imagen"
+                    height="425">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card13.jpg"
+                    alt="Imagen"
+                    height="250">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card14.jpg"
+                    alt="Imagen"
+                    height="320">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card15.jpg"
+                    alt="Imagen"
+                    height="425">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card16.jpg"
+                    alt="Imagen"
+                    height="250">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card17.jpg"
+                    alt="Imagen"
+                    height="320">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card18.jpg"
+                    alt="Imagen"
+                    height="425">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card19.jpg"
+                    alt="Imagen"
+                    height="250">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card20.jpg"
+                    alt="Imagen"
+                    height="320">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card21.jpg"
+                    alt="Imagen"
+                    height="425">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card22.jpg"
+                    alt="Imagen"
+                    height="315">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card23.jpg"
+                    alt="Imagen"
+                    height="420">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card24.jpg"
+                    alt="Imagen"
+                    height="435">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card25.jpg"
+                    alt="Imagen"
+                    height="315">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card26.jpg"
+                    alt="Imagen"
+                    height="310">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card27.jpg"
+                    alt="Imagen"
+                    height="435">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_small">
+                <div class="card_contenido">
+                    <img src="/assets/images/card28.jpg"
+                    alt="Imagen"
+                    height="240">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_medium">
+                <div class="card_contenido">
+                    <img src="/assets/images/card29.jpg"
+                    alt="Imagen"
+                    height="310">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_medium">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_medium">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenido">
+                    <img src="/assets/images/card30.jpg"
+                    alt="Imagen"
+                    height="435">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="card_buttons_on_hover-header">
+                        <button class="btn_guardar"> <b>Guardar</b> </button>
+                    </div>
+                    <div class="card_button_on_hover-footer">
+                        <button class="btn_update_large">
+                            <img src="/assets/images/icon_compartir.png"
+                            alt="Botón Compartir"
+                            height="20">
+                        </button>
+                        <button class="btn_dots_large">
+                            <img src="/assets/images/icon_puntos.png"
+                            alt="Botón más"
+                            height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de contenedor de pines -->
+
+        <!-- Botón flotante -->
+        <div class="container-fluid d-flex position-absolute bottom-0 end-0">
+            <a title="Agregar" class="btn btn-primary btn-lg rounded-circle ms-auto me-5 mb-5"
+                ng-click="disposeRequest()" data-bs-toggle="modal" data-bs-target="#newRequest">
+                <i class="fa-solid fa-plus"></i>
+            </a>
+        </div>
+        <!-- Fin botón flotante -->
+    </main>
+</body>
+
+</html>

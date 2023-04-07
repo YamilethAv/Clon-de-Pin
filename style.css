@@ -1,0 +1,333 @@
+* { /*medidas base*/
+    box-sizing: border-box; /*se crea un espacio de trabajo*/
+    margin: 0px; /*le quita cualquier margen*/
+    padding: 0px; /*le quita cualquier margen*/
+    font-size: 16px;
+}
+
+:root { /*pseudo-elemento*/
+    --card_width: 15.625rem;
+    /*~250px Anchura de la tarjeta/pin */
+    --row_increment: 0.625rem;
+    /*~10px Al estar usando CSS grid, cada tarjeta/pin estará hecha con incrementos de 10px para las filas */
+    --card_border_radius: 1rem;
+    /*~16px  Redondeo en los bordes de las tarjetas/pines*/
+    --card_small: 26;
+    /* Factor de crecimiento para tarjetas pequeñas: 26*0.625rem */
+    --card_medium: 33;
+    /* Factor de crecimiento para tarjetas medianas: 26*0.625rem */
+    --card_large: 45;
+    /* Factor de crecimiento para tarjetas grandes: 26*0.625rem */
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+nav {  /* Se modifica el tamaño de la barra de navegación */
+    height: 5rem; /* Alto */
+    background-color: brown;
+    display: flex; /* Acomoda los container */
+}
+
+.navbar_botones_pinterest_container {
+    width: 18.4rem;  /* Ancho */
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar_pinterest_botones {
+    padding-inline-start: 1.3rem; /*Modifica el borde del lado izquierdo*/
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-content: center;
+}
+
+.navbar_crear {
+    padding-inline-start: 0.3rem; /*Modifica el borde del lado izquierdo*/
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-content: center;
+}
+
+.navbar_pinterest_botones button {
+    margin-inline: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    fill: burlywood;
+}
+
+.navbar_pinterest_botones:focus button {
+    background-color: black;
+    color: white;
+    padding: 5rem;
+    border-radius: 5rem;
+
+}
+
+.navbar_crear button {
+    margin-inline: 1px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    fill: burlywood;
+}
+
+.navbar_search_container {
+    flex-grow: 4;
+    min-width: 3rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar_input_search {
+    padding-inline-start: 0.6rem;
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar_input_search img {
+    height: 1.1rem;
+    padding-inline-start: 0.3rem;
+}
+
+.navbar_input_search input {
+    padding-inline-start: 0.6rem;
+    height: 1.3rem;
+    flex-grow: 3;
+    background: transparent;
+    border: none;
+    outline: 0px;
+}
+
+.navbar_botones_usuario_container {
+    width: 13rem; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar_botones_usuario {
+    padding-inline-start: 1rem; /*Modifica el borde del lado izquierdo*/
+    padding-top: 0.1rem;
+    height: 1.8rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-content: center;
+}
+
+.navbar_botones_usuario button {
+    margin-inline: 11px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.pin_container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.card {
+    position: relative;
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: rgb(255, 255, 255);
+}
+
+.card_contenido {
+    position: absolute;
+}
+
+.card_contenido img {
+    Border-radius: var(--card_border_radius);
+}
+
+.card_buttons_on_hover {
+    width: 100%;
+    height: 100%;
+    padding-top: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: rgb(255, 255, 255);
+    transition: opacity 0.3s ease-in-out;
+    border-radius: var(--card_border_radius);
+}
+
+.card_buttons_on_hover:hover {
+    opacity:1;
+}
+
+.card_buttons_on_hover-header {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 0.5rem;
+}
+
+.card_buttons_on_hover-footer {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.btn_guardar {
+    min-height: 3rem;
+    min-width: 5.5rem;
+    border-radius: 2.3rem;
+    background-color: rgb(230, 0, 35);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: -0.1rem;
+    margin-inline-end: 0.3rem;
+}
+
+.btn_update {
+    min-height: 2rem;
+    min-width: 2rem;
+    background-color:rgba(232, 231, 229, 0.803);
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 7.3rem;
+    margin-inline-start: 9.4rem;
+}
+
+.btn_update_medium {
+    min-height: 2rem;
+    min-width: 2rem;
+    background-color:rgb(232, 231, 229, 0.803);
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 11.7rem;
+    margin-inline-start: 9.4rem;
+}
+
+.btn_update_large {
+    min-height: 2rem;
+    min-width: 2rem;
+    background-color:rgb(232, 231, 229, 0.803);
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 19.2rem;
+    margin-inline-start: 9.4rem;
+}
+
+.btn_update:hover {
+    background:rgb(232, 231, 229)
+}
+
+.btn_update_medium:hover {
+    background:rgb(232, 231, 229)
+}
+
+.btn_update_large:hover {
+    background:rgb(232, 231, 229)
+}
+
+.btn_dots {
+    min-width: 2rem;
+    min-height: 2rem;
+    background-color:rgb(232, 231, 229, 0.803);
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btn_dots:hover {
+    background:rgb(232, 231, 229)
+}
+
+.btn_dots_medium:hover {
+    background:rgb(232, 231, 229)
+}
+
+.btn_dots_large:hover {
+    background:rgb(232, 231, 229)
+}
+
+.btn_dots_medium {
+    min-width: 2rem;
+    min-height: 2rem;
+    background-color:rgb(232, 231, 229, 0.803);
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btn_dots_large {
+    min-width: 2rem;
+    min-height: 2rem;
+    background-color:rgb(232, 231, 229, 0.803);
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.card_small {
+    grid-row-end: span var(--card_small);
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_medium {
+    grid-row-end: span var(--card_medium);
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_large {
+    grid-row-end: span var(--card_large);
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
